@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgb(186, 180, 201);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: rgba(244, 234, 243, 0.874);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 450px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.calculator h2 {
+  margin-bottom: 15px;
+  color: rgb(4, 7, 12);
+  font-size: 1.5rem;
+}
+
+.calculator input {
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 2px solid rgb(65, 18, 166);
+  border-radius: 70px 70px 90px 90px;
+  outline: none;
+  background: rgba(240, 236, 236, 0.881);
+  color: rgb(14, 14, 14);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 25px;
+  justify-content: center;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.6rem;
+  background: rgba(14, 215, 151, 0.15);
+  color: rgb(22, 21, 21);
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+button:hover {
+  background: rgba(227, 8, 162, 0.3);
+  transform: scale(1.05);
+}
+
+.clear {
+  background: #e63946;
+}
+
+.clear:hover {
+  background: #ff4b5c;
+}
+
+.equal {
+  background: #06d6a0;
+}
+
+.equal:hover {
+  background: #08f7c7;
+}
